@@ -1,0 +1,56 @@
+b {
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+}
+.fitness-picture-container {
+  position: relative;
+}
+.fitness-picture-container-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.column-container {
+  position: relative;
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  padding: 50px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.image-descrption {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 50px;
+  right: 50px;
+  border-radius: 25px;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 40px;
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.column-container:hover .image-descrption {
+  visibility: visible;
+  opacity: 1;
+}
