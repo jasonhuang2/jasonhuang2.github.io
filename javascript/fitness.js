@@ -10,7 +10,7 @@ function changeGoalText() {
     });
 }
 
-setInterval(changeGoalText, 5000);
+setInterval(changeGoalText, 3000);
 
 
 
